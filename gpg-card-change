@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# https://github.com/drduh/YubiKey-Guide#multiple-yubikeys
+# gpg-connect-agent "scd serialno" "learn --force" /bye
+
+
 [ $# '<' 1 ] && {
 	echo "Insufficient arguments." > /dev/stderr
 	echo "Syntax:" > /dev/stderr
